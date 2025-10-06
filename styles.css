@@ -4,10 +4,11 @@ body {
     margin: 0px;
     height: 100vh;
     width: 100vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     /* Forest background */
     background: #A4AC86 url("images/websitetrees.png") no-repeat center bottom fixed;
-    background-size: 100% auto;
+    background-size: cover;
     margin: 0;
 
 }
@@ -18,57 +19,78 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    align-content: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    flex-wrap: nowrap;
-    
-
+    justify-content: flex-start;
 }
 
+.signInBox {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 450px;
+    height: 300px;
+
+    margin: 20px;
+    padding: 120px 200px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 10px 5px rgba(147, 102, 57, 0.7);
+}
 
 .signIn {
     
     color: #936639;
     font-size: 75px;
-    margin: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    
-    
+    margin: 100px 0 50px;
 }
 
-.username input, .password input {
-
+.username input, 
+.password input {
+    
     margin: 15px;
+    padding: 8px 12px;
     border-radius: 10px;
     border-color: #936639;
-    
-    border-width: 0px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    
-    box-shadow: 5px 5px 0px rgba(147, 102, 57, 0.7);
-
     min-height: 25px;
     min-width: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(147, 102, 57, 0.7);
+
+    
 
 }
 
 .signInButton button{
-  
     margin: 50px;
+    padding: 10px 25px;
     border-radius: 10px;
-    border-color: #936639;
-    border-width: 3px;
+    border: 3px solid #936639;
+    font-size: 16px;
+    font-weight: 600;
     min-height: 35px;
     min-width: 100px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-shadow: 5px 5px 0px rgba(147, 102, 57, 0.7);
+    box-shadow: 5px 5px 5px rgba(147, 102, 57, 0.7);
 }
+
+ 
+.forgotPassword {
+    text-decoration: none;
+    margin-bottom: 100px;
+    color: black;
+}
+
+.forgotPassword:hover {
+
+    color:rgba(255, 0, 0, 0.594);
+}
+
+
 
 .username input:hover, .password input:hover {
     
@@ -86,3 +108,4 @@ body {
     transform: scale(1.1);
     cursor: pointer;
 }
+
